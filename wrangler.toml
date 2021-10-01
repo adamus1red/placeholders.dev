@@ -3,6 +3,7 @@ type = "webpack"
 account_id = "522ed7942a6ec29727e101623a48ea76"
 zone_id = "51bfc6eeecc90565bd116ee3ebb5e3a8"
 workers_dev = true
+compatibility_date = "2021-10-01"
 
 [site]
 bucket = "./public"

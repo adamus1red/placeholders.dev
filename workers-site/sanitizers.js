@@ -13,6 +13,7 @@ function sanitizeString(input){
 	let value = sanitizeHtml(input, {allowedTags: ["br"], allowedAttributes: []});
 	console.log(value);
 	value = value.replace(/["<>]+/g, '');
+	value = value.replace(\\n, '<br />');
 	console.log(value);
 	return value;
 }

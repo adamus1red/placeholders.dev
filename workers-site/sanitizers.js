@@ -10,7 +10,7 @@ function sanitizeNumber(input){
 }
 
 function sanitizeString(input){
-	let value = sanitizeHtml(input, {allowedTags: [], allowedAttributes: []});
+	let value = sanitizeHtml(input, {allowedTags: ["br"], allowedAttributes: []});
 	value = value.replace(/["<>]+/g, '');
 	return value;
 }

@@ -11,7 +11,9 @@ function sanitizeNumber(input){
 
 function sanitizeString(input){
 	let value = sanitizeHtml(input, {allowedTags: ["br"], allowedAttributes: []});
+	console.log(value)
 	value = value.replace(/["<>]+/g, '');
+	console.log(value)
 	return value;
 }
 
